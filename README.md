@@ -20,7 +20,9 @@ def second_largest(nums):
         return None
     unique_nums = sorted(set(nums), reverse=True)
     return unique_nums[1] if len(unique_nums) > 1 else None
-**## Explanation**
-The function takes a list of integers (nums) as input, then checks whether the list has fewer than 2 elements; if so, it returns None.
+---
+Explanation
+
+The function takes a list of integers (nums) as input then checks whether the list has fewer than 2 elements; if so, it returns None.
 It uses set(nums) to remove duplicates and sorted(..., reverse=True) to sort in descending order.
 If the sorted unique list has at least 2 elements, it returns the second element (unique_nums[1]); otherwise, it returns None.
