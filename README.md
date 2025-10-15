@@ -87,7 +87,29 @@ sales_data = [
 ]
 
 total = calculate_total_revenue(sales_data)
-print(f"Total Revenue: ${total}")  
+print(f"Total Revenue: ${total}")
+
+# Question 5:
+
+You’ve been given this code snippet:
+
+```python
+numbers = [1, 2, 3, 4, 5]
+for i in range(len(numbers)):
+    if i % 2 == 0:
+        numbers.remove(i)
+print(numbers)
+````
+### Questions 
+What’s wrong with the code?
+Incorrect condition for removing even numbers and modification of the list while iterating.
+
+What will it output?
+The code will not print an output; it raises an exception.
+
+How would you fix it to remove even numbers correctly?
+First filter out even numbers without modifying the list during iteration and iterate from the end of the list.
+
 
 
 
