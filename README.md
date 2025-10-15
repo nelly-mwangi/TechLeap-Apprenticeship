@@ -64,4 +64,30 @@ In the loading State before the data arrives, display a message like "Loading us
 
 In the error State If something goes wrong , use .catch() to handle it gracefully and show an error message instead of leaving the user waiting.
 
+# Question 4 (Back-end / Logic):
+
+A small store wants to calculate total sales from this dataset:
+
+[
+  {"item": "Pen", "price": 20, "quantity": 3},
+  {"item": "Book", "price": 200, "quantity": 2},
+  {"item": "Bag", "price": 800, "quantity": 1}
+]
+
+Write a short function to calculate the total revenue.
+
+```python
+def calculate_total_revenue(sales):
+    return sum(item["price"] * item["quantity"] for item in sales)
+
+sales_data = [
+    {"item": "Pen", "price": 20, "quantity": 3},
+    {"item": "Book", "price": 200, "quantity": 2},
+    {"item": "Bag", "price": 800, "quantity": 1}
+]
+
+total = calculate_total_revenue(sales_data)
+print(f"Total Revenue: ${total}")  
+
+
 
