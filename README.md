@@ -105,11 +105,29 @@ What’s wrong with the code?
 Incorrect condition for removing even numbers and modification of the list while iterating.
 
 What will it output?
-
 The code will not print an output; it raises an exception.
 
 How would you fix it to remove even numbers correctly?
 First filter out even numbers without modifying the list during iteration and iterate from the end of the list.
+
+# Question 6:
+
+Explain how you would use Git to collaborate on a team project with other developers.
+
+Using Git for collaboration on a team project allows multiple developers to work on the same codebase efficiently, track changes, and avoid conflicts.
+
+---
+
+
+
+### One common Git command you use often
+Commit
+
+---
+
+### One problem you’ve faced while using Git and how you solved it
+Merge conflicts were avoided by not committing changes directly to the master branch; instead, a new branch was created for work.
+
 
 
 
