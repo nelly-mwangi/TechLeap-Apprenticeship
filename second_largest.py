@@ -4,6 +4,4 @@ def second_largest(nums):
     unique_nums = sorted(set(nums), reverse=True)
     return unique_nums[1] if len(unique_nums) > 1 else None
 
-# Example
-numbers = [5, 3, 9, 9, 2, 8]
-print(second_largest(numbers))  # Output: 8
+
