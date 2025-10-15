@@ -31,6 +31,8 @@ If the sorted unique list has at least 2 elements, it returns the second element
 Explain how you would optimize a page that loads too slowly. Mention at least three causes and how you’d fix each.
 First identify the root cause and apply specific optimization. 
 Some of the cause includes uncompressed and resolution images which increases file size and download time. To resolve this, compress and resize the images.  
+
 Poor server performance due to distance and inadequate hosting. This can be fixed by opting for providers with faster hosting for example AWS and implementing CDN that caches content closer to users and reduces latency.  
+
 Excessive HTTP requests that may overwhelm the browser. This can be minimized by concatenating multiple JS and CSS files.
 
