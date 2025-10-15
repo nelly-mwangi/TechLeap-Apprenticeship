@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+</head>
+<body>
+  <h2>User Profile</h2>
+  <div id="status">Loading user data...</div>
+  <div id="profile"></div>
+
+  <script>
+    const apiURL = "https://jsonplaceholder.typicode.com/users/1";
+    const statusDiv = document.getElementById("status");
+    const profileDiv = document.getElementById("profile");
+
+    fetch(apiURL)
+      .then(response => {
+        if (!response.ok) throw new Error("Network error");
+        return response.json();
+      })
+      .then(user => {
+        statusDiv.textContent = "";
+        profileDiv.innerHTML = `
+          <p><strong>Name:</strong> ${user.name}</p>
+          <p><strong>Email:</strong> ${user.email}</p>
+        `;
+      })
+      .catch(error => {
+        statusDiv.textContent = "❌ Failed to load user data.";
+        console.error("Error:", error);
+      });
+  </script>
+</body>
+</html>
