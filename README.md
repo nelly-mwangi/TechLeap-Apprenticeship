@@ -105,6 +105,7 @@ What’s wrong with the code?
 Incorrect condition for removing even numbers and modification of the list while iterating.
 
 What will it output?
+
 The code will not print an output; it raises an exception.
 
 How would you fix it to remove even numbers correctly?
